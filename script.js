@@ -22,12 +22,13 @@ Angela Lopez	Social Media Manager	angela-lopez-social-media-manager.jpg
 Scott Estrada	Developer	            scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer	    barbara-ramos-graphic-designer.jpg
 */
+//creato un oggeto
 let person={
     nome:"Wayne Barnett",
     ruolo:"Founder & CEO",
     foto:"wayne-barnett-founder-ceo.jpg"
 }
-
+//fatto stringa di oggeti
 let  teammembers = [
      {nome:"Wayne Barnett",ruolo:"Founder & CEO",foto:"wayne-barnett-founder-ceo.jpg"},
      {nome:"Angela Caroll",ruolo:"Chief Editor",foto: "angela-caroll-chief-editor.jpg"},
@@ -36,7 +37,9 @@ let  teammembers = [
      {nome:"Scott Estrada",ruolo:"Developer",foto: "scott-estrada-developer.jpg"},
      {nome:"Barbara Ramos",ruolo:"Graphic Designer",foto: "barbara-ramos-graphic-designer.jpg"}  
 ];
+//creato una variabile pre creare innerHTML
 let htmlCode = ``;
+//con questo for stampa le persone in console & crea inner html codice con cartelini di team
 for(let i = 0; i < teammembers.length; i++){
    let member = teammembers[i];
    console.log("Nome: "+member.nome+"    Ruolo: "+member.ruolo+"         Foto: "+member.foto);
@@ -60,7 +63,5 @@ htmlCode = htmlCode +
 }
 
 const teamcards = document.querySelector(".team-cards");
-
-// here's how we do the render;
-// since elephantCards is now = to that div, we now say let the inside of that div take in our htmlCode variable that holds our html codes.
+//seleziona dove mettere html codice e puoi lo inserisce
 teamcards.innerHTML = htmlCode;
