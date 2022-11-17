@@ -45,13 +45,14 @@ for(let i = 0; i < teammembers.length; i++){
 htmlCode = htmlCode + 
     `
     <article>
-      <div class="col sd-4 g-3">
+      <div class="col sd-4 g-3 bg-light b-0 m-1">
       <img class="img-fluid w-70" src="./img/${member.foto}" alt="${member.nome}">
-      </div>
-      <div>
-      <h3>${member.nome}</h3>
-      <p>${member.ruolo}</p>
-      </div>
+      
+        <div>
+            <h3>${member.nome}</h3>
+            <p>${member.ruolo}</p>
+        </div>
+     </div>
     </article>
   `;
 
