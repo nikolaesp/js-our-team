@@ -42,7 +42,7 @@ let htmlCode = ``;
 //con questo for stampa le persone in console & crea inner html codice con cartelini di team
 for(let i = 0; i < teammembers.length; i++){
    let member = teammembers[i];
-   console.log(`Nome: ${member.nome}    Ruolo: ${member.ruolo}         Foto: ${member.foto}`);
+   console.log(`Nome:\t${member.nome}\nRuolo:\t${member.ruolo}\nFoto:\t${member.foto}`);
   
 
 htmlCode = htmlCode + 
